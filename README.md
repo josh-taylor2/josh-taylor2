@@ -67,7 +67,7 @@ HTTPS load balancer with Route53 DNS and automatic deployment on push.
 `Terraform` `AWS (S3, ALB, Route53, ACM)` `GitLab CI/CD`
 
 **[Dev GitLab Nightly Shutdown](https://github.com/josh-taylor2/dev-gitlab-scheduler)**
-A scheduled pipeline that cut AWS spend by shutting down a development GitLab instance (EC2 + RDS)
+A scheduled pipeline that cut AWS spending by shutting down a development GitLab instance (EC2 + RDS)
 outside business hours. Uses cross-account IAM role assumption and idempotent state checks so it's
 safe to run repeatedly.
 `Bash` `AWS CLI` `IAM / STS` `GitLab CI Schedules`
