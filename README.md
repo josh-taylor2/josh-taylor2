@@ -1,0 +1,97 @@
+# Hi, I'm Joshua Taylor 👋
+
+Software developer focused on **full-stack web applications, cloud infrastructure, and DevOps automation**.
+
+<!-- TODO: replace the bracketed text below with your real program and graduation term -->
+I'm a [PROGRAM NAME] student at **McGill University** (expected [MONTH YEAR]). Most of the work
+below comes from my software development internship on a **CloudOps / DevOps team**, where I
+shipped internal tools used by developers, administrators, and the UX team.
+
+📫 **Reach me:** [joshua.taylor2@mail.mcgill.ca](mailto:joshua.taylor2@mail.mcgill.ca) · [LinkedIn](https://linkedin.com/in/YOUR-HANDLE)
+
+---
+
+## 🛠️ Skills
+
+| Area | Technologies |
+|------|--------------|
+| **Languages** | Java 21 · TypeScript · Python · JavaScript · Bash · SQL |
+| **Frontend** | Vue 3 (Composition API) · Vite · Vanilla JS SPAs · HTML/CSS |
+| **Backend** | Spring Boot · Node.js / Express · REST API design |
+| **Databases** | PostgreSQL · MongoDB |
+| **Cloud (AWS)** | ECS Fargate · EKS · S3 · ALB · Route53 · IAM · RDS · EC2 · ACM · SSM |
+| **Infrastructure** | Terraform · Docker · Kubernetes · Helm |
+| **CI/CD** | GitLab CI/CD (multi-stage pipelines, scheduled jobs, manual triggers) |
+| **Auth & Security** | OAuth2 / OIDC · Keycloak · Okta · JWT · AES-256-GCM encryption at rest |
+| **AI / Automation** | LLM integration · Model Context Protocol (MCP) · Jira REST API |
+
+---
+
+## 📂 Projects
+
+All projects below are from my internship. Because the original code is proprietary, each repo
+contains **architecture documentation and sanitized code snippets** rather than a runnable
+application — no credentials, internal hostnames, or account identifiers are included.
+
+### Full-Stack Applications
+
+**[License Generator Web App](https://github.com/josh-taylor2/license-generator)**
+A Spring Boot + MongoDB application for creating, searching, and managing software license keys,
+replacing a manual and error-prone process. I built the REST API with ETag-based HTTP caching, a
+vanilla-JS single-page frontend with client-side routing and dynamic form generation, the OAuth2/OIDC
+security layer, and the full Terraform + GitLab CI deployment onto ECS Fargate.
+`Java 21` `Spring Boot` `MongoDB` `Terraform` `AWS` `GitLab CI/CD` `OAuth2`
+
+**[Admin Portal](https://github.com/josh-taylor2/admin-portal)**
+A Vue 3 + Express + PostgreSQL portal that gave CloudOps administrators self-service control over
+customer configurations — work that previously required a developer for every change. Designed and
+built from scratch, including the database schema, an AES-256-GCM encrypted messaging system, a
+safe-by-default capability toggle service, and Kubernetes-native deployment with idempotent migrations.
+`TypeScript` `Vue 3` `Express` `PostgreSQL` `Kubernetes` `Helm` `Keycloak`
+
+### Cloud Infrastructure
+
+**[Design Prototypes Platform](https://github.com/josh-taylor2/design-prototypes-platform)**
+Terraform-managed internal hosting that let the UX team publish and share coded prototypes with
+stakeholders without pulling in DevOps for every deploy. S3 static hosting behind an internal
+HTTPS load balancer with Route53 DNS and automatic deployment on push.
+`Terraform` `AWS (S3, ALB, Route53, ACM)` `GitLab CI/CD`
+
+**[Dev GitLab Nightly Shutdown](https://github.com/josh-taylor2/dev-gitlab-scheduler)**
+A scheduled pipeline that cut AWS spend by shutting down a development GitLab instance (EC2 + RDS)
+outside business hours. Uses cross-account IAM role assumption and idempotent state checks so it's
+safe to run repeatedly.
+`Bash` `AWS CLI` `IAM / STS` `GitLab CI Schedules`
+
+### DevOps Automation & AI
+
+**[Multi-Agent AI Orchestration Framework](https://github.com/josh-taylor2/kiro-multi-agent)**
+A framework where a central orchestrator agent routes requests to specialized sub-agents for
+Kubernetes, Jira, and GitLab operations. Each agent has scoped tool access and versioned steering
+documents, with MCP servers providing external API access.
+`AI / LLM` `MCP` `Python` `Helm` `kubectl`
+
+**[Automated Image Promotion Pipeline](https://github.com/josh-taylor2/images-promotion)**
+Replaced the weekly manual creation of Jira Change Request tickets for promoting patched container
+images to staging and production. Parses a patch report, builds Jira wiki-markup tables, and files
+fully-populated tickets through the Jira Service Management API.
+`Bash` `Jira REST API` `GitLab CI/CD` `yq` `jq`
+
+**[AI Pipeline Error Resolution Agent](https://github.com/josh-taylor2/ticket-hunter-agent)**
+Mines closed Jira incident tickets for root-cause comments and generates an AI-summarized knowledge
+base, which an agent then uses to match new pipeline failures against known patterns and suggest fixes.
+`Python` `Jira REST API` `LLM Integration` `GitLab CI/CD`
+
+---
+
+## 📌 A Note on These Repositories
+
+These projects were built during an internship on proprietary internal systems, so the complete
+source cannot be published. Each repository instead contains:
+
+- **A written case study** — the problem, the solution, the architecture, and the key technical decisions
+- **Sanitized code snippets** demonstrating the actual patterns I implemented
+- **A clear statement of my specific contribution** to each project
+
+Every snippet has been reviewed to remove credentials, internal hostnames, account identifiers, and
+proprietary business logic.
