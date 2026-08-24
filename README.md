@@ -12,18 +12,9 @@ shipped internal tools used by developers, administrators, and the UX team.
 
 ## 🧭 How I Work
 
-My strength is turning ambiguous requirements into a clear architecture and spec — the rest of
-the team's DevOps surface area is too broad (a dozen languages across a dozen services) for
-anyone to be a deep expert everywhere. In practice that means I lean heavily on **spec-driven,
-AI-assisted development with [Kiro](https://kiro.dev)**: I write the requirements, design docs,
-and acceptance criteria in detail, then drive implementation from those specs rather than
-free-handing every line. It's the same skill behind the
-[Multi-Agent AI Orchestration Framework](https://github.com/josh-taylor2/kiro-multi-agent) below,
-which I built to formalize that workflow for the rest of the team.
+My strength is in communicating requirements and turning them into a clear architecture and spec — having spent 8 months on a DevOps team across 2 internships, I've learned to work across a broad distribution of languages and technologies, too many to be an expert in every one. In practice that means I lean heavily on **spec-driven, AI-assisted development with [Kiro](https://kiro.dev)**: I'm meticulous about requirements, design docs, and acceptance criteria, then drive implementation from those specs rather than free-handing every line. It's the same skill behind the [DORA Catch-All Workflow](https://github.com/josh-taylor2/dora-catch-all-workflow) below, where I wrote the full spec before implementing a line of it.
 
-The technologies listed under each project are what the systems are built with and what I can
-read, extend, and reason about confidently — not a claim of equal hand-written fluency in all of
-them.
+The technologies listed below are some of the notable ones I've interacted with during my time as a DevOps intern.
 
 ---
 
@@ -81,13 +72,9 @@ safe to run repeatedly.
 
 ### DevOps Automation & AI
 
-**[Multi-Agent AI Orchestration Framework](https://github.com/josh-taylor2/kiro-multi-agent)**
-A framework where a central orchestrator agent routes requests to specialized sub-agents for
-Kubernetes, Jira, and GitLab operations. This was primarily a requirements and specification
-effort — I wrote the steering documents, routing logic, and scope rules that define how each
-agent behaves, then used Kiro's spec-driven workflow to implement them. Each agent has scoped
-tool access and versioned steering documents, with MCP servers providing external API access.
-`AI / LLM` `Kiro` `MCP` `Python` `Helm` `kubectl`
+**[DORA Catch-All Workflow](https://github.com/josh-taylor2/dora-catch-all-workflow)**
+DORA is a multi-agent DevOps system built by a senior engineer on my team; it dispatches Jira tickets to dedicated workflows for known problem types. I built the catch-all workflow that runs when no dedicated workflow matches — it searches a nightly-updated knowledge base of past incidents (built by my [ticket-hunter](https://github.com/josh-taylor2/ticket-hunter-agent) pipeline) and posts a proposed solution or triage recommendation, so every ticket gets a response instead of hitting a dead end. Spec-driven: I wrote EARS-style requirements and a design doc before implementation.
+`AI / LLM` `MCP` `Jira REST API` `Bash` `systemd`
 
 **[Automated Image Promotion Pipeline](https://github.com/josh-taylor2/images-promotion)**
 Replaced the weekly manual creation of Jira Change Request tickets for promoting patched container
