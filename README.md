@@ -3,8 +3,8 @@
 Software developer focused on **full-stack web applications, cloud infrastructure, and DevOps automation**.
 
 <!-- TODO: replace the bracketed text below with your real program and graduation term -->
-I'm a [PROGRAM NAME] student at **McGill University** (expected [MONTH YEAR]). Most of the work
-below comes from my software development internship on a **CloudOps / DevOps team**, where I
+I'm a fourth year student at **McGill University** (expected graduation in Winter 2028). Most of the work
+below comes from my software development internship on a **DevOps team**, where I
 shipped internal tools used by developers, administrators, and the UX team.
 
 📫 **Reach me:** [joshua.taylor2@mail.mcgill.ca](mailto:joshua.taylor2@mail.mcgill.ca) · [LinkedIn](https://www.linkedin.com/in/joshua-taylor-809013291/)
