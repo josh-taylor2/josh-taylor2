@@ -12,18 +12,11 @@ shipped internal tools used by developers, administrators, and the UX team.
 
 ## 🧭 How I Work
 
-My strength is turning ambiguous requirements into a clear architecture and spec — the rest of
-the team's DevOps surface area is too broad (a dozen languages across a dozen services) for
-anyone to be a deep expert everywhere. In practice that means I lean heavily on **spec-driven,
-AI-assisted development with [Kiro](https://kiro.dev)**: I write the requirements, design docs,
-and acceptance criteria in detail, then drive implementation from those specs rather than
-free-handing every line. It's the same skill behind the
-[Multi-Agent AI Orchestration Framework](https://github.com/josh-taylor2/kiro-multi-agent) below,
+My strength is in communicating requirements and turning them into a clear architecture and spec — having spent 8 months on a DevOps team across 2 internships, I've learned to work across a broad distribution of languages and technologies, too many to be an expert in every one. In practice that means I lean heavily on spec-driven, AI-assisted development with Kiro: I'm meticulous about requirements, design docs, and acceptance criteria, then drive implementation from those specs rather than free-handing every line. It's the same skill behind the
+Multi-Agent AI Orchestration Framework below,
 which I built to formalize that workflow for the rest of the team.
 
-The technologies listed under each project are what the systems are built with and what I can
-read, extend, and reason about confidently — not a claim of equal hand-written fluency in all of
-them.
+The technologies listed below are some of the notable ones I've interacted with during my time as a DevOps intern.
 
 ---
 
