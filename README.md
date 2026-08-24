@@ -7,11 +7,28 @@ I'm a [PROGRAM NAME] student at **McGill University** (expected [MONTH YEAR]). M
 below comes from my software development internship on a **CloudOps / DevOps team**, where I
 shipped internal tools used by developers, administrators, and the UX team.
 
-📫 **Reach me:** [joshua.taylor2@mail.mcgill.ca](mailto:joshua.taylor2@mail.mcgill.ca) · [LinkedIn](https://linkedin.com/in/YOUR-HANDLE)
+📫 **Reach me:** [joshua.taylor2@mail.mcgill.ca](mailto:joshua.taylor2@mail.mcgill.ca) · [LinkedIn](https://www.linkedin.com/in/joshua-taylor-809013291/)
 
 ---
 
-## 🛠️ Skills
+## 🧭 How I Work
+
+My strength is turning ambiguous requirements into a clear architecture and spec — the rest of
+the team's DevOps surface area is too broad (a dozen languages across a dozen services) for
+anyone to be a deep expert everywhere. In practice that means I lean heavily on **spec-driven,
+AI-assisted development with [Kiro](https://kiro.dev)**: I write the requirements, design docs,
+and acceptance criteria in detail, then drive implementation from those specs rather than
+free-handing every line. It's the same skill behind the
+[Multi-Agent AI Orchestration Framework](https://github.com/josh-taylor2/kiro-multi-agent) below,
+which I built to formalize that workflow for the rest of the team.
+
+The technologies listed under each project are what the systems are built with and what I can
+read, extend, and reason about confidently — not a claim of equal hand-written fluency in all of
+them.
+
+---
+
+## 🛠️ Technologies I've Worked Across
 
 | Area | Technologies |
 |------|--------------|
@@ -23,7 +40,7 @@ shipped internal tools used by developers, administrators, and the UX team.
 | **Infrastructure** | Terraform · Docker · Kubernetes · Helm |
 | **CI/CD** | GitLab CI/CD (multi-stage pipelines, scheduled jobs, manual triggers) |
 | **Auth & Security** | OAuth2 / OIDC · Keycloak · Okta · JWT · AES-256-GCM encryption at rest |
-| **AI / Automation** | LLM integration · Model Context Protocol (MCP) · Jira REST API |
+| **AI / Spec-Driven Dev** | Kiro · LLM integration · Model Context Protocol (MCP) · Jira REST API |
 
 ---
 
@@ -67,9 +84,11 @@ safe to run repeatedly.
 
 **[Multi-Agent AI Orchestration Framework](https://github.com/josh-taylor2/kiro-multi-agent)**
 A framework where a central orchestrator agent routes requests to specialized sub-agents for
-Kubernetes, Jira, and GitLab operations. Each agent has scoped tool access and versioned steering
-documents, with MCP servers providing external API access.
-`AI / LLM` `MCP` `Python` `Helm` `kubectl`
+Kubernetes, Jira, and GitLab operations. This was primarily a requirements and specification
+effort — I wrote the steering documents, routing logic, and scope rules that define how each
+agent behaves, then used Kiro's spec-driven workflow to implement them. Each agent has scoped
+tool access and versioned steering documents, with MCP servers providing external API access.
+`AI / LLM` `Kiro` `MCP` `Python` `Helm` `kubectl`
 
 **[Automated Image Promotion Pipeline](https://github.com/josh-taylor2/images-promotion)**
 Replaced the weekly manual creation of Jira Change Request tickets for promoting patched container
