@@ -1,4 +1,4 @@
-# Hi, I'm Joshua Taylor 👋
+# Hi, I'm Josh
 
 Software developer focused on **full-stack web applications, cloud infrastructure, and DevOps automation**.
 
@@ -64,7 +64,7 @@ stakeholders without pulling in DevOps for every deploy. S3 static hosting behin
 HTTPS load balancer with Route53 DNS and automatic deployment on push.
 `Terraform` `AWS (S3, ALB, Route53, ACM)` `GitLab CI/CD`
 
-**[Dev GitLab Nightly Shutdown](https://github.com/josh-taylor2/dev-gitlab-scheduler)**
+**[GitLab Nightly Shutdown](https://github.com/josh-taylor2/dev-gitlab-scheduler)**
 A scheduled pipeline that cut AWS spending by shutting down a development GitLab instance (EC2 + RDS)
 outside business hours. Uses cross-account IAM role assumption and idempotent state checks so it's
 safe to run repeatedly.
@@ -73,7 +73,7 @@ safe to run repeatedly.
 ### DevOps Automation & AI
 
 **[DORA Catch-All Workflow](https://github.com/josh-taylor2/dora-catch-all-workflow)**
-DORA is a multi-agent DevOps system built by a senior engineer on my team; it dispatches Jira tickets to dedicated workflows for known problem types. I built the catch-all workflow that runs when no dedicated workflow matches — it searches a nightly-updated knowledge base of past incidents (built by my [ticket-hunter](https://github.com/josh-taylor2/ticket-hunter-agent) pipeline) and posts a proposed solution or triage recommendation, so every ticket gets a response instead of hitting a dead end. Spec-driven: I wrote EARS-style requirements and a design doc before implementation.
+DORA is a multi-agent DevOps system built by one of my teammates; it dispatches Jira tickets to dedicated workflows for known problem types. I built the catch-all workflow that runs when no dedicated workflow matches — it searches a nightly-updated knowledge base of past incidents (built by my [ticket-hunter](https://github.com/josh-taylor2/ticket-hunter-agent) pipeline) and posts a proposed solution or triage recommendation, so every ticket gets a response instead of hitting a dead end. Spec-driven: I wrote EARS-style requirements and a design doc before implementation.
 `AI / LLM` `MCP` `Jira REST API` `Bash` `systemd`
 
 **[Automated Image Promotion Pipeline](https://github.com/josh-taylor2/images-promotion)**
