@@ -8,13 +8,6 @@ shipped internal tools used by developers, administrators, and the UX team.
 
 📫 **Reach me:** [joshua.taylor2@mail.mcgill.ca](mailto:joshua.taylor2@mail.mcgill.ca) · [LinkedIn](https://www.linkedin.com/in/joshua-taylor-809013291/)
 
----
-
-## 🧭 How I Work
-
-My strength is in communicating requirements and turning them into a clear architecture and spec — having spent 8 months on a DevOps team across 2 internships, I've learned to work across a broad distribution of languages and technologies, too many to be an expert in every one. In practice that means I lean heavily on **spec-driven, AI-assisted development with [Kiro](https://kiro.dev)**: I'm meticulous about requirements, design docs, and acceptance criteria, then drive implementation from those specs rather than free-handing every line. It's the same skill behind the [DORA Catch-All Workflow](https://github.com/josh-taylor2/dora-catch-all-workflow) below, where I wrote the full spec before implementing a line of it.
-
-The technologies listed below are some of the notable ones I've interacted with during my time as a DevOps intern.
 
 ---
 
